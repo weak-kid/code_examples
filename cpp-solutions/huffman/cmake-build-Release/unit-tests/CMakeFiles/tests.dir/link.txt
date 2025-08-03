@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/tests.dir/tests.cpp.o -o tests  ../vcpkg_installed/x64-linux/lib/libgtest.a ../vcpkg_installed/x64-linux/lib/manual-link/libgtest_main.a ../huffman_lib/libhuffman.a ../vcpkg_installed/x64-linux/lib/libgtest.a 

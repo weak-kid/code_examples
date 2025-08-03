@@ -1,0 +1,427 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 673c8eea73bfff201b02039a8c565804fb1c1e33a16471662defb87b59fb4a25
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2023-05-04
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 7b3d0c2dc4876f573b20677355c4ac02e7e0d40922a193e9847eadd4fb15ee8f
+Status: install ok installed
+
+Package: gtest
+Version: 1.14.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 6f859342049ec58aed5fdcabd99f88ae79c6180b6a0fd624bc39adac1f157a7a
+Description: GoogleTest and GoogleMock testing frameworks
+Status: install ok installed
+
+Package: boost-uninstall
+Version: 1.83.0
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 117117f7210fcf916108b81194b9bd71a9067b31b10ebf3e12ce2a226d05b9f7
+Description: Internal vcpkg port used to uninstall Boost
+Status: purge ok not-installed
+
+Package: boost-vcpkg-helpers
+Version: 1.83.0
+Depends: boost-uninstall
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 38a471aa15e1e422323b370045d098da651c87b2f000e7307bc9bfc1e8b5655b
+Description: Internal vcpkg port used to modularize Boost
+Status: purge ok not-installed
+
+Package: boost-config
+Version: 1.83.0
+Depends: boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 273719e7e09efa8604011eccc3c72b75b0246aaee9fadae5bc2b59b07cc06aa7
+Description: Boost config module
+Status: purge ok not-installed
+
+Package: boost-static-assert
+Version: 1.83.0
+Depends: boost-config, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 661b6b06125f24cf7d9e04f3bec83dc97e11c03f40f4c75131a7006fc44a549e
+Description: Boost static_assert module
+Status: purge ok not-installed
+
+Package: boost-type-traits
+Version: 1.83.0
+Depends: boost-config, boost-static-assert, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: e55367750f17e385214fdc052e97e52c64afee277d6dfeb253c30e0c73576d7a
+Description: Boost type_traits module
+Status: purge ok not-installed
+
+Package: boost-assert
+Version: 1.83.0
+Depends: boost-config, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 9f6507406df4ad6646f07d58fff053c79e7ffc8cbdb99a8df78859f27c61d018
+Description: Boost assert module
+Status: purge ok not-installed
+
+Package: boost-throw-exception
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 36e99c54480ea6ab6e74288b6a325f49e480ef4f6b5d960ffae6fce7165c6932
+Description: Boost throw_exception module
+Status: purge ok not-installed
+
+Package: boost-preprocessor
+Version: 1.83.0
+Depends: boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 288391306603da7134166ae37ecca7d016f4c67477876f8da24bf5bd6dc78fdd
+Description: Boost preprocessor module
+Status: purge ok not-installed
+
+Package: boost-io
+Version: 1.83.0
+Depends: boost-config, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 3acd28d4108308e318339799469b6cf0c4a929a29c8ec8aaead43c9c96beb642
+Description: Boost io module
+Status: purge ok not-installed
+
+Package: boost-core
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-static-assert, boost-throw-exception, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 1ccc7147dcc60c341bea68acf1f243371fdda8e491ba53f21dafcd585a68eb14
+Description: Boost core module
+Status: purge ok not-installed
+
+Package: boost-utility
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-core, boost-io, boost-preprocessor, boost-throw-exception, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 3316e2b52c5b8c2d871f6e7af0e19d4b8bc6beac39d007174796c9c18028e01d
+Description: Boost utility module
+Status: purge ok not-installed
+
+Package: boost-move
+Version: 1.83.0
+Depends: boost-config, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 4740c4e528032c32dac1edcbf20bf410cf8295288a3214b38cd21b5dc9642e30
+Description: Boost move module
+Status: purge ok not-installed
+
+Package: boost-smart-ptr
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-core, boost-move, boost-static-assert, boost-throw-exception, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 17053179f6202e43c91e2b1cf92ffda1b626efab3f1016f1a9c3aa47ecd7af60
+Description: Boost smart_ptr module
+Status: purge ok not-installed
+
+Package: boost-predef
+Version: 1.83.0
+Depends: boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 55461831806f66a6c3a627bd493ac3a44228e6710caab817e5a4a2c1850adb12
+Description: Boost predef module
+Status: purge ok not-installed
+
+Package: boost-detail
+Version: 1.83.0
+Depends: boost-config, boost-core, boost-preprocessor, boost-static-assert, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: be3817cfb2974fb66b6f1c869841a17186c77306c1795586e13385fa4b018061
+Description: Boost detail module
+Status: purge ok not-installed
+
+Package: boost-optional
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-core, boost-detail, boost-move, boost-predef, boost-static-assert, boost-throw-exception, boost-type-traits, boost-utility, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: d806d2726c5856efddd023fa442a062157c782226fbf718fb3146ea248fb1f18
+Description: Boost optional module
+Status: purge ok not-installed
+
+Package: boost-mpl
+Version: 1.83.0
+Depends: boost-config, boost-core, boost-predef, boost-preprocessor, boost-static-assert, boost-type-traits, boost-utility, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 3e80c57fc9082253262f034f3bf3032294b98f77ceb2e2d7149bc2c6e826f877
+Description: Boost mpl module
+Status: purge ok not-installed
+
+Package: boost-typeof
+Version: 1.83.0
+Depends: boost-config, boost-preprocessor, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 783ed5e153bf568964c263d1ef089d60bd4a9484d5e0430e67c28eb18ea0bdc1
+Description: Boost typeof module
+Status: purge ok not-installed
+
+Package: boost-tuple
+Version: 1.83.0
+Depends: boost-config, boost-core, boost-static-assert, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 2369a6d024f453b777d7c081a5cdfa9927fdbd087a7b4da6250fd68faeb8c4f8
+Description: Boost tuple module
+Status: purge ok not-installed
+
+Package: boost-function-types
+Version: 1.83.0
+Depends: boost-config, boost-core, boost-detail, boost-mpl, boost-preprocessor, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 9355c58cd1819aaa5abb2d5b0970e791609d24ca302841a9eb5014799ba06929
+Description: Boost function_types module
+Status: purge ok not-installed
+
+Package: boost-bind
+Version: 1.83.0
+Depends: boost-config, boost-core, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 06ebe74af2a7c2bde0e0fccf4b8c91188dc901b9d5f3230fa6c1acb512bfb7ec
+Description: Boost bind module
+Status: purge ok not-installed
+
+Package: boost-function
+Version: 1.83.0
+Depends: boost-assert, boost-bind, boost-config, boost-core, boost-preprocessor, boost-throw-exception, boost-type-traits, boost-typeof, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 5283e5118c860348028e4c7c959db45bd84910c7d7873c6a6a303638e1511751
+Description: Boost function module
+Status: purge ok not-installed
+
+Package: boost-functional
+Version: 1.83.0
+Depends: boost-config, boost-core, boost-function, boost-function-types, boost-mpl, boost-preprocessor, boost-type-traits, boost-typeof, boost-utility, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 640c52b574525de57d6ecd22a8d742090bfcf652e60bea9daa5c8c43899e9d7a
+Description: Boost functional module
+Status: purge ok not-installed
+
+Package: boost-mp11
+Version: 1.83.0
+Depends: boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 21fe90f057ea1156926e262240d6d1883e05694f15b01c328bc8a52447d1815e
+Description: Boost mp11 module
+Status: purge ok not-installed
+
+Package: boost-describe
+Version: 1.83.0
+Depends: boost-mp11, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 7774b8c2ed13bd8469574f6772bc44a743ba3b0af14170064057798e55879c37
+Description: Boost describe module
+Status: purge ok not-installed
+
+Package: boost-container-hash
+Version: 1.83.0
+Depends: boost-config, boost-describe, boost-mp11, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: c0c6cde5b2af672118f64abfef0c0d756ec9be8035e3f282be64441b3cc0adc9
+Description: Boost container_hash module
+Status: purge ok not-installed
+
+Package: boost-fusion
+Version: 1.83.0
+Depends: boost-config, boost-container-hash, boost-core, boost-function-types, boost-functional, boost-mpl, boost-preprocessor, boost-static-assert, boost-tuple, boost-type-traits, boost-typeof, boost-utility, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: bdb4054142425edf6f80ce5157c6e031837d51f1f27f8dab2924f4659d5568f5
+Description: Boost fusion module
+Status: purge ok not-installed
+
+Package: boost-conversion
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-core, boost-smart-ptr, boost-throw-exception, boost-type-traits, boost-typeof, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 52190b525d335599c2b522298dd885e24ddf2b6cbdcdd9e037f01ef6c51722f3
+Description: Boost conversion module
+Status: purge ok not-installed
+
+Package: boost-concept-check
+Version: 1.83.0
+Depends: boost-config, boost-preprocessor, boost-static-assert, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: a05a6e86749b4c3a7b7ff081b9a21fdf1439623165e6017a49b996e2761316ca
+Description: Boost concept_check module
+Status: purge ok not-installed
+
+Package: boost-iterator
+Version: 1.83.0
+Depends: boost-assert, boost-concept-check, boost-config, boost-conversion, boost-core, boost-detail, boost-function-types, boost-fusion, boost-mpl, boost-optional, boost-smart-ptr, boost-static-assert, boost-type-traits, boost-utility, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 41e45dd21fad13fd6352f93b6c234d45d39f207596413ff16d38d6658cf894b2
+Description: Boost iterator module
+Status: purge ok not-installed
+
+Package: boost-tokenizer
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-core, boost-iterator, boost-throw-exception, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 5c22e857460032b5c398c38c80862f8a15a6a3512bd48f63bd7a81e331fafab5
+Description: Boost tokenizer module
+Status: purge ok not-installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2023-03-02
+Depends: vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 98793d87efc89d6dffe92471c4e2d7e3e0403578c069a70a76fbc4c5d338483c
+Status: purge ok not-installed
+
+Package: boost-modular-build-helper
+Version: 1.83.0
+Depends: boost-uninstall, vcpkg-cmake, vcpkg-cmake-get-vars
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 5b41be4c93a8f6e495bd086de37cddbea126b76ea1467066288f8b9e6bc0bbf1
+Description: Internal vcpkg port used to build Boost libraries
+Status: purge ok not-installed
+
+Package: boost-integer
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-core, boost-static-assert, boost-throw-exception, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 788e0c57bd6ad507592355bfe1d08546cb6d05bb69f9460dee91013dab1e8e34
+Description: Boost integer module
+Status: purge ok not-installed
+
+Package: boost-build
+Version: 1.83.0
+Depends: boost-uninstall
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 983ecd827626978c5f4290e2ace5ca39d906af900f6e1064a3e2b0a3935dc3b9
+Description: Boost.Build
+Status: purge ok not-installed
+
+Package: boost-regex
+Version: 1.83.0
+Depends: boost-assert, boost-build, boost-concept-check, boost-config, boost-container-hash, boost-core, boost-integer, boost-modular-build-helper, boost-mpl, boost-predef, boost-smart-ptr, boost-static-assert, boost-throw-exception, boost-type-traits, boost-vcpkg-helpers, vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: afa4b7b7778dfae22603db272f1a51b97928b2f56afc179d7e0c7f5523a1c7ea
+Description: Boost regex module
+Status: purge ok not-installed
+
+Package: boost-array
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-core, boost-static-assert, boost-throw-exception, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 637205d6eb26c82f59a8791b0caff8753ea32cd4ce5eb094661c7de997518300
+Description: Boost array module
+Status: purge ok not-installed
+
+Package: boost-range
+Version: 1.83.0
+Depends: boost-array, boost-assert, boost-concept-check, boost-config, boost-container-hash, boost-conversion, boost-core, boost-detail, boost-iterator, boost-mpl, boost-optional, boost-preprocessor, boost-regex, boost-static-assert, boost-tuple, boost-type-traits, boost-utility, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 1124c0be0fde995f1f0292c56a641236a190c01bef55b7208623f097ebe3838c
+Description: Boost range module
+Status: purge ok not-installed
+
+Package: boost-numeric-conversion
+Version: 1.83.0
+Depends: boost-config, boost-conversion, boost-core, boost-mpl, boost-preprocessor, boost-throw-exception, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: b113c007e4956275a513b5f03fae1986113a76e409a38f178e124aa2e1e4c586
+Description: Boost numeric_conversion module
+Status: purge ok not-installed
+
+Package: boost-intrusive
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-container-hash, boost-move, boost-static-assert, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: a96b12c9241ff817b4df2823cbcf59fe18488cae5cae077f7fea7f88d6e5d147
+Description: Boost intrusive module
+Status: purge ok not-installed
+
+Package: boost-container
+Version: 1.83.0
+Depends: boost-assert, boost-build, boost-config, boost-intrusive, boost-modular-build-helper, boost-move, boost-static-assert, boost-vcpkg-helpers, vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 11e4e6f7fccec04444e91f175e7a17c1d3b255cad349d1bc7e78c6b6d4c3da7b
+Description: Boost container module
+Status: purge ok not-installed
+
+Package: boost-lexical-cast
+Version: 1.83.0
+Depends: boost-array, boost-assert, boost-config, boost-container, boost-core, boost-integer, boost-numeric-conversion, boost-range, boost-static-assert, boost-throw-exception, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 9df6d1cd960dafbb9c43d1583a19b4e65c1a81a213e4635a37d75af8974c9eb6
+Description: Boost lexical_cast module
+Status: purge ok not-installed
+
+Package: boost-type-index
+Version: 1.83.0
+Depends: boost-config, boost-container-hash, boost-core, boost-preprocessor, boost-static-assert, boost-throw-exception, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 9121520cde709fac485b1753161a4e6ede5cb66a67d00abe8e47d125ba70ab9e
+Description: Boost type_index module
+Status: purge ok not-installed
+
+Package: boost-any
+Version: 1.83.0
+Depends: boost-assert, boost-config, boost-core, boost-static-assert, boost-throw-exception, boost-type-index, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 5cddcc95f3b94dd4aac4715745a1a5271fc0bbb4a53a3686b0bedd1a916005cd
+Description: Boost any module
+Status: purge ok not-installed
+
+Package: boost-program-options
+Version: 1.83.0
+Depends: boost-any, boost-bind, boost-build, boost-config, boost-core, boost-detail, boost-function, boost-iterator, boost-lexical-cast, boost-modular-build-helper, boost-smart-ptr, boost-static-assert, boost-throw-exception, boost-tokenizer, boost-type-traits, boost-vcpkg-helpers, vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 34fde25009c190888a82130311d00e8bbfd044e8ef50c6e8d98b28aaac54fb82
+Description: Boost program_options module
+Status: purge ok not-installed
+

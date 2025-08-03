@@ -1,0 +1,14 @@
+Tue Oct 31 17:00:02 2023 : Test empty_str started
+Tue Oct 31 17:00:02 2023 : compressed
+Tue Oct 31 17:00:02 2023 : decompressed
+Tue Oct 31 17:00:02 2023 : Test empty_file started
+Tue Oct 31 17:00:02 2023 : Test empty_decode started
+Tue Oct 31 17:20:38 2023 : Test empty_file started
+Tue Oct 31 17:21:20 2023 : Test empty_file started
+Tue Oct 31 17:45:31 2023 : Test simple started
+Tue Oct 31 17:45:37 2023 : Test simple started
+Tue Oct 31 17:45:43 2023 : Test simple started
+Tue Oct 31 17:45:46 2023 : Test simple started
+Tue Oct 31 17:48:58 2023 : Test two_buffers started
+Tue Oct 31 17:48:58 2023 : compressed
+Tue Oct 31 17:48:58 2023 : decompressed

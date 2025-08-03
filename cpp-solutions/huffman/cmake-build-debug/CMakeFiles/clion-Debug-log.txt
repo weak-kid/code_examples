@@ -1,0 +1,20 @@
+/home/nalexander/Downloads/CLion-2023.2/clion-2023.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/nalexander/Downloads/CLion-2023.2/clion-2023.2/bin/ninja/linux/x64/ninja -DCMAKE_TOOLCHAIN_FILE=/home/nalexander/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake -G Ninja -S /home/nalexander/Documents/huffman-weak-kid -B /home/nalexander/Documents/huffman-weak-kid/cmake-build-debug
+-- Running vcpkg install
+waiting to take filesystem lock on /home/nalexander/.vcpkg-clion/vcpkg/.vcpkg-root...
+Detecting compiler hash for triplet x64-linux...
+All requested packages are currently installed.
+Total install time: 277 ns
+The package gtest is compatible with built-in CMake targets:
+
+    enable_testing()
+    
+    find_package(GTest CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE GTest::gtest GTest::gtest_main GTest::gmock GTest::gmock_main)
+    
+    add_test(AllTestsInMain main)
+
+-- Running vcpkg install - done
+-- Enabling _GLIBCXX_DEBUG...
+-- Configuring done (1.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/nalexander/Documents/huffman-weak-kid/cmake-build-debug

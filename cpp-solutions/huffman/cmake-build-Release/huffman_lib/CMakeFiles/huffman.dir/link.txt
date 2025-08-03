@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhuffman.a CMakeFiles/huffman.dir/bit_reader.cpp.o CMakeFiles/huffman.dir/bit_writer.cpp.o CMakeFiles/huffman.dir/huffman_lib.cpp.o CMakeFiles/huffman.dir/huffman_tree.cpp.o CMakeFiles/huffman.dir/serialization.cpp.o CMakeFiles/huffman.dir/bit_code.cpp.o CMakeFiles/huffman.dir/counter.cpp.o
+/usr/bin/ranlib libhuffman.a

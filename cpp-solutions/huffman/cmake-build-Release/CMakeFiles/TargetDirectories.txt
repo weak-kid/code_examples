@@ -1,0 +1,9 @@
+/home/nalexander/Documents/huffman-weak-kid/cmake-build-Release/CMakeFiles/huffman-tool.dir
+/home/nalexander/Documents/huffman-weak-kid/cmake-build-Release/CMakeFiles/edit_cache.dir
+/home/nalexander/Documents/huffman-weak-kid/cmake-build-Release/CMakeFiles/rebuild_cache.dir
+/home/nalexander/Documents/huffman-weak-kid/cmake-build-Release/unit-tests/CMakeFiles/tests.dir
+/home/nalexander/Documents/huffman-weak-kid/cmake-build-Release/unit-tests/CMakeFiles/edit_cache.dir
+/home/nalexander/Documents/huffman-weak-kid/cmake-build-Release/unit-tests/CMakeFiles/rebuild_cache.dir
+/home/nalexander/Documents/huffman-weak-kid/cmake-build-Release/huffman_lib/CMakeFiles/huffman.dir
+/home/nalexander/Documents/huffman-weak-kid/cmake-build-Release/huffman_lib/CMakeFiles/edit_cache.dir
+/home/nalexander/Documents/huffman-weak-kid/cmake-build-Release/huffman_lib/CMakeFiles/rebuild_cache.dir

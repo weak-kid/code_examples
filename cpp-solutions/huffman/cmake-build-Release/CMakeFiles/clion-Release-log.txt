@@ -1,0 +1,4 @@
+Cannot generate into /home/nalexander/Documents/huffman-weak-kid/cmake-build-Release
+This directory is already used for 'Release (1)' profile
+
+Please either delete it manually or select another generation directory
